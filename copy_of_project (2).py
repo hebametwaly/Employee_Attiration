@@ -755,7 +755,7 @@ from pyngrok import ngrok
 public_url = ngrok.connect(8000)
 print(f"🚀 Your FastAPI app is live at: {public_url}")
 
-!uvicorn app:app --host 0.0.0.0 --port 8000 &
+#!uvicorn app:app --host 0.0.0.0 --port 8000 &
 
 from pyngrok import ngrok
 public_url = ngrok.connect(8000)
