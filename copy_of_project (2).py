@@ -690,9 +690,7 @@ def predict(data: EmployeeData):
     prediction = model.predict(input_data)
     return {"attrition_risk": int(prediction[0])}
 
-#!ngrok authtoken 2wuZFqSR932D3og9iyUe4Ir0stU_4YaLp5GhnUVKXjzEfyR3B
 
-#!pip install fastapi uvicorn pyngrok
 
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -763,7 +761,7 @@ from pyngrok import ngrok
 public_url = ngrok.connect(8000)
 print(public_url)
 
-#!pip install fastapi uvicorn nest-asyncio pyngrok
+
 
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -812,14 +810,14 @@ model = RandomForestClassifier()
 model.fit(X, y)
 
 # Save the model
-joblib.dump(model, "model.pkl")  # ✅ Creates model.pkl file
+joblib.dump(model, "model.pkl")  
 
 import os
 print("model.pkl exists:", os.path.exists("model.pkl"))
 
 model = joblib.load("model.pkl")
 
-#!pip install fastapi uvicorn nest-asyncio pyngrok joblib scikit-learn
+
 
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
@@ -873,7 +871,7 @@ joblib.dump(model, "model.pkl")
 #     return {"attrition_risk": int(prediction[0])}
 #
 
-#!pip install python-multipart
+
 
 import nest_asyncio
 from pyngrok import ngrok
