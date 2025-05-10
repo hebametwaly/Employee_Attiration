@@ -659,8 +659,8 @@ metrics = run.data.metrics
 print("Parameters: ", params)
 print("Metrics: ", metrics)
 
-!pip install fastapi uvicorn joblib pydantic
-!pip install pyngrok  # For exposing the app through ngrok
+#!pip install fastapi uvicorn joblib pydantic
+#!pip install pyngrok  # For exposing the app through ngrok
 
 from fastapi import FastAPI
 from pydantic import BaseModel
